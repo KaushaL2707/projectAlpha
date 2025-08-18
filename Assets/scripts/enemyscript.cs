@@ -24,6 +24,7 @@ public class enemyscript : MonoBehaviour
 
     void Update()
     {
+        //enemy follow person
         if (player == null || !isChasing) return;
 
         Vector3 direction = player.position - transform.position;

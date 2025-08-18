@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab; // assign in Inspector
-    public Transform[] spawnPoints; // assign your spawn points in Inspector
+    public GameObject enemyPrefab; // Enemy
+    public Transform[] spawnPoints; // assign your spawn points
 
     public float spawnInterval = 3f; // spawn every 3 seconds
     private float timer;
