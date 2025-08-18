@@ -7,6 +7,20 @@ public class enemyscript : MonoBehaviour
 
     private bool isChasing = true;
 
+    void Start()
+    {
+        // If player not assigned manually, find it by tag
+        if (player == null)
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
+            {
+                player = playerObj.transform;
+            }
+        }
+    }
+
+
 
     void Update()
     {
